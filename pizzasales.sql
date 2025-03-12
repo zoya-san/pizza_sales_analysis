@@ -10,7 +10,7 @@ select sum(total_price)/count(distinct(order_id)) as average_order_value from pi
 select sum(quantity) as total_pizzas_sold from pizza.pizza_sales;
 
 -- 4. Total Orders
-select sum(distinct(order_id)) as total_orders from pizza.pizza_sales;
+select count(distinct(order_id)) as total_orders from pizza.pizza_sales;
 
 
 
